@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffff;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            padding: 20px 0;
+        }
+
+        /* Updated styles for h3 */
+        h3 {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            max-width: 80%; /* Limit the width to 80% of the viewport */
+            margin: 0 auto; /* Center the h3 element horizontally */
+        }
+
+        /* Updated styles for ul and ol */
+        ul, ol {
+            list-style: none;
+            padding: 0;
+            max-width: 80%; /* Limit the width to 80% of the viewport */
+            margin: 0 auto; /* Center the list horizontally */
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Button Styles */
+        .top-button {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Centered Button Styles */
+        .center-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h2>Project Status</h2>
+    
+
+    <!-- Top Button -->
+    <div class="center-button">
+        <a href="index.html"><button class="button">Visit Project Portal</button></a>
+    </div>
+
+
+    <h3>Solution Statement Details</h3>
+    <ul>
+        <li><input type="checkbox" checked> Approach: Design, development, testing, and deployment.</li>
+    </ul>
+
+    <h3>Design</h3>
+    <ul>
+        <li><input type="checkbox" checked> Platform: Web (currently)</li>
+        <li><input type="checkbox"> Geospatial Data Collection: GPS devices or existing GIS data</li>
+        <li><input type="checkbox"> Geospatial Mapping: QGIS (open source)</li>
+        <li><input type="checkbox"> Grievance Redressal: Implement a ticketing system for efficient management and tracking.</li>
+        <li><input type="checkbox" checked> IoT Implementation: Use flow rate sensors to collect and transmit data via HTTP protocol (ESP32/ATmega328p microcontroller).</li>
+    </ul>
+
+    <h3>Technology Stack</h3>
+    <ul>
+        <li><input type="checkbox" checked> Programming Languages: JavaScript (Node.js for the backend) and PHP.</li>
+        <li><input type="checkbox"> Database: Initially, NoSQL databases and CSV; later shift to PostgreSQL with PostGIS extension.</li>
+        <li><input type="checkbox" checked> IoT: ESP32/ARDUINO platform.</li>
+    </ul>
+
+    <h3>Prototype Development</h3>
+    <ul>
+        <li><input type="checkbox"> Tests: Build a basic version focusing on geospatial data input, visualization, grievance reporting, and basic IoT data display.</li>
+        <li><input type="checkbox"> Iterations: Incremental development, adding features and refining based on feedback.</li>
+    </ul>
+
+    <h3>Data Management</h3>
+    <ul>
+        <li><input type="checkbox"> Data Sources: Utilize geospatial data from government databases, satellite imagery, or user-generated data (longitude and latitude).</li>
+        <li><input type="checkbox"> Data Processing: Implement data preprocessing, cleaning, and transformation as necessary.</li>
+        <li><input type="checkbox"> Data Updates: Regularly update geospatial data to keep it current (automated data fetching and synchronization later).</li>
+    </ul>
+
+    <h3>User Experience</h3>
+    <ul>
+        <li><input type="checkbox" checked> User Interface (UI): Create a user-friendly, responsive design for web and mobile.</li>
+        <li><input type="checkbox"> Usability Testing: Conduct usability testing with potential users for UI improvements.</li>
+    </ul>
+
+    <h3>Security and Privacy</h3>
+    <ul>
+        <li><input type="checkbox"> Data Encryption: Implement HTTPS for secure data transmission and encryption standards for sensitive data storage (later).</li>
+        <li><input type="checkbox"> Access Control: Enable user authentication and authorization for admin panel access.</li>
+        <li><input type="checkbox"> Data Privacy: Ensure compliance with data privacy regulations and responsible data handling.</li>
+    </ul>
+
+    <h3>Testing and Feedback</h3>
+    <ul>
+        <li><input type="checkbox"> Testing: Perform unit testing, integration testing, and end-to-end testing to identify and fix bugs and issues.</li>
+        <li><input type="checkbox"> User Feedback: Gather feedback from users and involve real users in the beta testing process.</li>
+    </ul>
+</body>
+</html>
