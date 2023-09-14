@@ -30,8 +30,9 @@
 
 ### **Design:**
 - **Platform:** Web (current)
-- **Geospatial Data Collection:** Leveraging GPS devices or existing GIS data
-- **Geospatial Mapping:** Harnessing the power of QGIS (open source)
+- **Geospatial Data Collection:** Leveraging GPS devices or existing GIS data, user-generated data by allowing users to input  spatial coordinates (latitude, longitude).Creating a form for data submission and implementing validation. To show the location and distribution of water supply infrastructure.
+- **Geospatial Mapping:** Harnessing the power of QGIS (open source), water supply networks by mapping the systems of pipes.
+- **Geospatial Database:** Organized collection of information related to water supply infrastructure. It includes data such as the location, type, condition, and capacity. Adding a geospatial component to each piece of data is associated with its precise geographic coordinates, allowing it to be mapped and analyzed in the context of its physical location.
 - **Grievance Redressal:** Implement a ticketing system to manage and track these grievances efficiently.
 - **IoT Implementation:** Utilizing flow rate sensors, transmitting data via HTTP protocol, and employing ESP32/ATmega328p microcontrollers
 
@@ -46,8 +47,8 @@
 
 ### **Data Management:**
 - **Data Sources:** Utilizing geospatial data from government databases, satellite imagery, or user-generated data with longitude and latitude
-- **Data Processing:** Implementing data preprocessing, cleaning, and transformation as needed
-- **Data Updates:** Ensuring regular updates of geospatial data for real-time accuracy, with automated data fetching and synchronization in future phases
+- **Data Processing:** Developing PHP based on preprocessing to incoming data. This might involve cleaning and validating user-generated data or formatting data from government sources for storage.
+- **Data Updates:** Ensuring regular updates of geospatial data for real-time accuracy, with automated data fetching and updating geospatial data from government databases at regular intervals for real-time accuracy, synchronization in future phases
 
 ### **User Experience:**
 - **User Interface (UI):** A user-centric, responsive design ensuring seamless functionality on both web and mobile platforms
@@ -57,6 +58,7 @@
 - **Data Encryption:** Employing state-of-the-art HTTPS for secure data transmission and industry-standard encryption for sensitive data storage in subsequent stages
 - **Access Control:** Implementing stringent user authentication and authorization for admin panel access, limiting data modification to authorized personnel
 - **Data Privacy:** Complying with stringent data privacy regulations, ensuring responsible handling of user data with utmost care and consent
+- **User Authentication and Authorization:** Implementing user authentication and authorization using PHP. Ensure that only authorized users can submit or access certain data.
 
 ### **Testing and Feedback:**
 - **Testing:** Rigorous testing, including unit testing, integration testing, and end-to-end testing to identify and promptly address any bugs or issues
