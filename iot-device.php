@@ -82,10 +82,10 @@
 <body>
     <div class="container">
         <h1>IoT Device Pannel</h1>
-        <p>24x7hrs. IoT Connected Water Supply Monitoring and Alert</p>
+        <p>24x7hrs. IoT Connected Water Supply Networks Monitoring and Alert.</p>
         <?php
         // Define the allowed filenames array
-        $allowedFilenames = ['dvjbbgds', 'other_filename']; // Add your allowed filenames here
+        $allowedFilenames = ['I001D', 'I002D','I003D']; // Add your allowed filenames here
 
         // Task 1: Read query parameters
         $flowRate = $_GET['flowrate'] ?? null;
