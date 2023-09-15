@@ -66,6 +66,28 @@
             text-decoration: none;
         }
         
+        /* Button container at the bottom center of each section */
+    .button-container-center {
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    /* Style for the buttons */
+    .button-container-center .button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+        
 
 
         .coming-soon {
@@ -107,43 +129,41 @@
     <div class="container">
 
         <div class="section">
-            <h2>Operations</h2>
+            <h2>Geospatial Mapping/Collection</h2>
             <div class="clearfix">
                 <img src="https://loremflickr.com/600/400/map,gis" alt="Operations Image">
                 <img src="https://loremflickr.com/600/400/water,waterpipe" alt="Pipeline Image">
                 <p><b>Stock Image 400X600</b></p>
             </div>
             <!-- Include design-related content here -->
+            
+            <div class="button-container-center"><a class="button" href="geospatial.php">OPEN</a></div>
         </div>
 
         <div class="section">
-            <h2>Technology</h2>
+            <h2>IoT Alert/Monitoring</h2>
             <div class="clearfix">
                 <img src="https://loremflickr.com/600/400/iot,sensor" alt="Placeholder Image 1">
                 <img src="https://loremflickr.com/600/400/data,software" alt="Placeholder Image 2">
                 <p><b>Stock Image 400X600</b></p>
             </div>
             <!-- Include technology stack content here -->
+             <div class="button-container-center"><a class="button" href="iot-devices.php">OPEN</a></div>
         </div>
+        
+        
 
         <div class="section">
-            <h2>IoT Device</h2>
+            <h2>Grievance  Management</h2>
             <div class="clearfix">
-                <img src="https://loremflickr.com/600/400/device,sensor" alt="Placeholder Image 1">
-                <img src="https://loremflickr.com/600/400/sensor" alt="Placeholder Image 2">
+                <img src="https://loremflickr.com/600/400/file" alt="Placeholder Image 1">
+                <img src="https://loremflickr.com/600/400/grievance" alt="Placeholder Image 2">
                 <p><b>Stock Image 400X600</b></p>
             </div>
             <!-- Include prototype development content here -->
+            
+               <div class="button-container-center"><a class="button" href="iot-devices.php">OPEN</a></div>
         </div>
-
-        <div class="section">
-            <h2>Data Management</h2>
-            <div class="clearfix">
-                <img src="https://loremflickr.com/600/400/software,file" alt="Placeholder Image 1">
-                <img src="https://loremflickr.com/600/400/data,code" alt="Placeholder Image 2">
-                <p><b>Stock Image 400X600</b></p>
-            </div>
-            <!-- Include prototype development content here -->
         </div>
 
     </div>
