@@ -82,7 +82,7 @@
 <body>
     <div class="container">
         <h1>IoT Device Pannel</h1>
-        <p>24x7hrs. IoT Connected Water Supply Networks Monitoring and Alert.</p>
+         <h3 style="font-family: Arial, sans-serif; color: #text-indent: 50px; text-align: center;letter-spacing: 2px;"> 24x7hrs. IoT Connected Water Supply Network Alert Monitoring. </h3>
         <?php
         // Define the allowed filenames array
         $allowedFilenames = ['I001D', 'I002D','I003D']; // Add your allowed filenames here
