@@ -30,4 +30,69 @@ if ($fp) {
 } else {
     die("Failed to open file");
 }
+
+
+
+
+// 6-----------------------------------------------------------
+
+
+
+function updateCSVFile() {
+    
+    if($filename = "I001D") { /// Device ID
+    
+    $filename = 'Manipal.csv'; // Specify the filename
+    $incomingFlowrate = $flowrate;    // Replace with your incoming flowrate value
+
+    
+    
+    
+    // Path to the CSV file
+    $csvFilePath = 'Geospatial-db/' . $filename;
+
+    // Check if the file exists
+    if (!file_exists($csvFilePath)) {
+        die("CSV file not found.");
+    }
+
+    // Read the CSV file into an array
+    $csvData = array_map('str_getcsv', file($csvFilePath));
+
+    // Find the row to update (assuming the row format is "latitude,longitude,name,status")
+    $rowToUpdate = array_search('13.352532,74.792822,Pump House (MIT),DOWN', $csvData);
+
+    // Check if the row was found
+    if ($rowToUpdate !== false) {
+        // Determine the new status based on the flowrate
+        $newStatus = ($flowrate > 0) ? 'UP' : 'DOWN';
+
+        // Update the status column (assuming it's the fourth column, index 3)
+        $csvData[$rowToUpdate][3] = $newStatus;
+
+        // Open the CSV file for writing
+        $fileHandle = fopen($csvFilePath, 'w');
+
+        // Check if the file was opened successfully
+        if ($fileHandle) {
+            // Write the updated data back to the CSV file
+            foreach ($csvData as $row) {
+                fputcsv($fileHandle, $row);
+            }
+
+            // Close the file handle
+            fclose($fileHandle);
+
+            echo "CSV file updated successfully!";
+        } else {
+            die("Failed to open CSV file for writing.");
+        }
+    } else {
+        die("Row not found in CSV file.");
+    }
+}
+
+}
+
+
 ?>
