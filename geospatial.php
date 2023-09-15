@@ -18,20 +18,8 @@
             padding: 10px;
             border-radius: 5px;
             color: #fff;
-        }
-        
-         .button {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-             cursor: pointer;
-             text-decoration: none;
-             position: absolute;
-             bottom: 0;
-             left: 50%;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
+     
+         
         }
 
         /* Styling for the data table */
@@ -58,14 +46,27 @@
             text-align: center;
             color: #007BFF;
             margin-top: auto;
-            margin-bottom: auto;
+        
+        }
+
+        /* Styling for the button container */
+        .button-container-center {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20 px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <h1>Select Province</h1>
-    <br/>
-    
     <div class="dropdown">
         <label for="province-select">Select Province:</label>
         <select id="province-select" onchange="loadData()" style="background-color: #f5f5f5; color: #007BFF;">
@@ -81,8 +82,9 @@
             ?>
         </select>
     </div>
-     <br/>
-      <br/>
+    <br/>
+    <br/>
+
     <div id="map" style="height: 400px;"></div>
 
     <!-- Table to display data -->
@@ -99,6 +101,12 @@
             <!-- Data rows will be inserted here -->
         </tbody>
     </table>
+
+    <!-- Button for entering data -->
+    <div class="button-container-center">
+        <a class="button" href="add-geospatial.php">Enter Data</a>
+        <br/>
+    </div>
     
     <script>
         var map = L.map('map').setView([0, 0], 2); // Default map view
@@ -165,8 +173,5 @@
             }
         }
     </script>
-    
-                
-            <div class="button-container-center"><a class="button" href="add-geospatial.php">Enter Data</a></div>
 </body>
 </html>
